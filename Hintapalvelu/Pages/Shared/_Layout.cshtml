@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Hintapalvelu</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Hintapalvelu.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 style="text-align:center;">&nbsp;</h1>
+                <h1 style="text-align:center;">Hintapalvelu.fi</h1>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <table style="background-color:white; border-radius: 15px;">
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                                <tr>
+                                    <td> <b style="color:white;">&nbsp;&nbsp;Kategoriat&nbsp;&nbsp;</b></td>
+                                </tr>
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <table style="background-color:lightgrey; border-radius: 15px;">
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                                <tr>
+                                    <td> <b style="color:black;">&nbsp;&nbsp;Haku&nbsp;&nbsp;</b></td>
+                                </tr>
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <table style="background-color:lightgrey; border-radius: 15px;">
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                                <tr>
+                                    <td> <b style="color:black;">&nbsp;&nbsp;Kategoriat&nbsp;&nbsp;</b></td>
+                                </tr>
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <table style="background-color:lightgrey; border-radius: 15px;">
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                                <tr>
+                                    <td> <b style="color:black;">&nbsp;&nbsp;Toivelista&nbsp;&nbsp;</b></td>
+                                </tr>
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" style="float: right">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <table style="background-color:white; border-radius: 15px;">
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                                <tr>
+                                    <td> <b style="color:white;">&nbsp;&nbsp;Kategoriat&nbsp;&nbsp;</b></td>
+                                </tr>
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" style="float: right">
+                        <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <table style="background-color:lightgrey; border-radius: 15px;">
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <b style="color:black; font-size:15px">&nbsp;&nbsp;Kirjaudu sisään&nbsp;&nbsp;</b>
+                                        <picture>
+                                    <img src="https://solki.live/public/cache/default-profile600837632.jpg" width="50" height="50">
+                                     </picture>
+                                     <b style="color:black;">&nbsp;&nbsp;&nbsp;</b>
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td> <b style="color:black;"></b></td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            Ohjelmistotuotanto Ryhmä 4
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
